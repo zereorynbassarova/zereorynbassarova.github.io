@@ -22,6 +22,7 @@ nav {
   width: 100%;
   background-color:rgb(0, 0, 0);
   overflow: hidden;
+  display: block;
 }
 .menu {
   list-style-type: none;
@@ -30,24 +31,23 @@ nav {
 }
 .logo img {
   width: auto;
-  height: 21px;
+  height: 1.5em;
   object-fit: cover;
 }
 .logo, ul.menu li {
   float: left;
 }
 nav a {
-  width: 140px;
-  height: 20px;
+  width: 8em;
+  height: 1em;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-ul.menu > li:last-child {
-  float: right;
-}
+
+
 nav li:hover {
   background-color: rgb(118, 32, 71);
   transition: 0.5s;
@@ -64,7 +64,7 @@ nav li:hover {
   text-align: center;
   color: rgb(255, 0, 140);
   left: 50%;
-  font-size: 25pt;
+  font-size: 2em;
   letter-spacing: 0.1em;
   transition: 0.3s;
   text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
@@ -88,8 +88,8 @@ article {
   background-color: hsl(330, 100%, 95%);
   width: 80%;
   border: 1px solid black;
-  padding: 25px 100px 25px 100px;
-  border-radius: 10px;
+  padding: 2em 1em 2em 1em;
+  border-radius: 5px;
   margin: 15px auto;
   box-sizing: border-box;
 }
@@ -120,7 +120,7 @@ article {
 #Important {
   color: rgb(32, 21, 183);
   text-shadow: 2px 2px #808080;
-  font-size: 25pt;
+  font-size: 2em;
   text-transform: uppercase;
 }
 #Important:hover {
@@ -129,20 +129,26 @@ article {
 }
 
 /*Some Dummy Content styling*/
+.SDC1 {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .SDC {
+  display: block;
   background-color: rgb(221, 233, 244);
-  width: 32%;
+  width: 100%;
   border: 1px solid rgb(26, 19, 79);
-  padding: 25px 25px;
-  border-radius: 2px;
-  margin: 15px 0px 15px 15px;
+  padding: 1em 1em;
+  border-radius: 2em;
+  margin: 1em 0em 1em 1em;
   box-sizing: border-box;
-  float: left;
 }
 
 /*Styling footer*/
 h5 {
-  font-size: 12pt;
+  font-size: 1em;
 }
 .footer{
   margin-top: 0;
@@ -161,7 +167,7 @@ h5 {
   padding-left: 0;
 }
 .test1, .test2{
-  padding: 3px 5px 3px 5px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .listofitems{
@@ -181,7 +187,7 @@ h5 {
 
 .footer div h5{
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 0.5em;
   letter-spacing: 1px;
   color: #efefef;
 }
@@ -222,7 +228,7 @@ table,th,td {
   border: rgb(0, 0, 0) solid 1px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top:auto;
   background-color:#eee;
 }
 th, td {
@@ -243,4 +249,220 @@ th, td {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+
+
+
+/*Tablet version*/
+@media screen and (min-width:768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    background-color: rgb(160, 167, 246);
+  }
+
+  table,th,td 
+  {
+    width:100%;
+    padding: auto;
+    background-color: beige;
+    align-items: center;
+  }
+
+ html 
+ {
+  font-size:1em;
+ }
+
+ .logo, ul.menu li
+ {
+  flex:auto
+ }
+
+ 
+ article {
+  background-color: hsl(330, 71%, 97%);
+  width: 80%;
+  border: 1px solid black;
+ }
+
+
+ img {
+  max-width: 100%;
+  height: auto
+}
+
+.SDC1 {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/*
+.SDC {
+  display: block;
+  background-color: beige;
+  width: 80%;
+  border: 1px solid rgb(26, 19, 79);
+  padding: 1em 1em;
+  border-radius: 2em;
+  margin: 15px auto;
+  box-sizing: border-box;
+}*/
+
+.SDC {
+  background-color: rgb(221, 233, 244);
+  width: 30%;
+  border: 1px solid rgb(26, 19, 79);
+  padding: 25px 25px;
+  border-radius: 2px;
+  margin: 15px 0px 15px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a 
+{
+  width:100%;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+a.logo {
+  padding: 14px 0px;
+}
+
+#main-heading{
+  font-size: 1.7em;
+}
+
+
+.footer{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+.col-1{
+ 
+  width:100%;
+}
+
+.col-2{
+ 
+  width:100%;
+}
+
+.col-3{
+ 
+  width:100%;
+}
+}
+
+/*Mobile version*/
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  body {
+    width: 100%;
+    background-color: aquamarine;
+  }
+
+  table,th,td 
+  {
+    width:90%;
+    padding: auto;
+    background-color: beige;
+    align-items: center;
+  }
+
+ html 
+ {
+  font-size:0.7em;
+ }
+
+ .logo, ul.menu li
+ {
+  flex:auto
+ }
+
+ 
+ article {
+  background-color: hsl(330, 100%, 95%);
+  width: 70%;
+  border: 1px solid black;
+
+  
+ }
+
+
+ img {
+  max-width: 100%;
+  height: auto
+}
+
+.SDC1 {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.SDC {
+  display: block;
+  background-color: beige;
+  width: 80%;
+  border: 1px solid rgb(26, 19, 79);
+  padding: 1em 1em;
+  border-radius: 2em;  
+  margin: 15px auto;
+  box-sizing: border-box;
+}
+
+nav a 
+{
+  width:100%;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  max-width: 93%;
+}
+
+
+
+#main-heading{
+  font-size: 1.7em;
+}
+
+
+.footer{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+.col-1{
+ 
+  width:100%;
+}
+
+.col-2{
+ 
+  width:100%;
+}
+
+.col-3{
+ 
+  width:100%;
+}
 }
