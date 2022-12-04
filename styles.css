@@ -293,6 +293,11 @@ img.attachments{
         margin: 0 20px 0 20px;
     }
     
+    img.attachments{
+        width: 100%;
+        height: fit-content;
+    }
+    
 
 
     
