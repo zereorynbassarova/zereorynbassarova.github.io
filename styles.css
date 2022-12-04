@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li[class~="item"]{
+    font-size: 1.3rem;
+}
+
+
+
+
+header {
+    background-color: #080f44;
+}
+
+li {
+    list-style: none;
+}
+
+a[href$=".html"], .link {
+    color: #e8e9ea;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 23px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 59px;
+}
+
+
+
+.link{
+    transition: 0.5s ease;
+}
+
+.link:hover {
+    color: #a3cafe;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.space{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #edf0f1;
+}
+
+
+
+
+
+
+img#photo{
+    width: 450px;
+    height: fit-content;
+    margin: 0 20px 0 20px;
+}
+
+.mobile_version {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*content styling*/
+.content{
+    background-color: #d4e2f4;
+    padding: 40px 60px;
+    margin: 0 100px;
+}
+#content{
+    display: flex;
+}
+nav.navbar{
+    padding: 0 120px;
+}
+
+
+
+.courses{
+    display: flex;
+}
+
+.course_titles{
+    padding-left: 20px;
+}
+
+.semesters{
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+.column{
+    width: 50%;
+}
+#content div{
+    width: 412px;
+    font-size: larger;
+}
+#Courses_taken, #button, .contacts {
+    cursor: pointer;
+    color: black;
+}
+#Courses_taken:hover, #button:hover, .contacts:hover {
+    color: rgb(78, 115, 149);
+    transition: 0.3s ease;
+}
+.institutions{
+    display: flex;
+    margin-bottom: 20px;
+}
+.institutions div{
+    width: 50%;
+}
+
+#details{
+    font-size: 1.5em;
+    line-height: normal;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+body{
+    font-size: 0.938rem;
+    line-height: 1.6;
+}
+
+#AllCourses{
+    line-height: normal;
+}
+
+h1[class~="h1CV"] {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #ab091c;
+}
+
+img.attachments{
+    width: 48%;
+    height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+    
+.footer{
+    background: #080f44;
+    padding: 27px 0;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+    
+.footer .line{
+    margin:1.6% 0%;
+    font-size:0.8em;
+    color: #e8e9ea;
+}
+    
+.footer .line a i{
+    font-size:2em;
+    margin:0% 10px;
+}
+
+
+.contacts{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+@media(max-width:768px){
+    .mobile-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #080f44;
+        width: 100%;
+        transition: 0.3s;
+    }
+    
+
+
+
+    .item{
+        margin: 16px 0;
+    }
+    .menu.open{
+        left: 0;
+    }
+    .semesters{
+        flex-direction: column;
+    }
+    div.column {
+        width: 100%;
+    }
+
+    .mobile_version{
+        display: inline;
+    }
+
+    .pc_version {
+        display: none;
+    }
+    #content{
+        flex-direction: column;
+    }
+    .col {
+        width: 100% !important;
+    }
+    img#photo{
+        margin: 10px 0 0 0;
+    }
+    h1, h1[class~="h1CV"]{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    
+
+
+
+    *, .contacts{
+        font-size: 1rem;
+    }
+    .content{
+        padding: 20px 40px;
+    }
+
+    .skills{
+        display: inline;
+    }
+    
+    h2 { 
+        font-size: 1.17em; 
+        margin-top: 15px;
+        text-align: center;
+    }
+    h3 { 
+        font-size: 1em; 
+    }
+
+    .h3CV{
+        margin-top: 15px;
+    }
+    .date{
+        text-align: center;
+    }
+    .h2CV{
+        text-align: start;
+    }
+    
+
+
+    
+}
+
+
