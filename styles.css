@@ -286,6 +286,9 @@ img.attachments{
     .h2CV{
         text-align: start;
     }
+    div#content.content{
+        margin: 0 20px 0 20px;
+    }
     
 
 
